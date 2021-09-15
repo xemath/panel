@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <title>Panel de Administración</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fab fa-apple"></i></span>
+                        <span class="title"><h2>Castro</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="title">Panel</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-users"></i></span>
+                        <span class="title">Clientes</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-comment"></i></span>
+                        <span class="title">Mensaje</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-question-circle"></i></span>
+                        <span class="title">Ayuda</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-cogs"></i></span>
+                        <span class="title">Configuración</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-unlock"></i></span>
+                        <span class="title">Constraseña</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="title">Salir</span>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Buscar...">
+                        <i class="fas fa-search"></i>
+                    </label>
+                    
+                </div>
+                <div class="user">
+                    <img src="user.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,042</div>
+                        <div class="cardName">Vistas Diarias</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Ventas</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">230</div>
+                        <div class="cardName">Comentarios</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-comment"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">$21'550.000</div>
+                        <div class="cardName">Ganancias</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Ordenes Recientes</h2>
+                        <a href="#" class="btn">Ver todo</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nombre</td>
+                                <td>Precio</td>
+                                <td>Pago</td>
+                                <td>Estado</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nevera</td>
+                                <td>$1'200,000</td>
+                                <td>Pago</td>
+                                <td><span class="status delivered">Entregado</span></td>
+                            </tr>
+                            <tr>
+                                <td>Ventana</td>
+                                <td>$230,000</td>
+                                <td>Debe</td>
+                                <td><span class="status pending">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td>Parlantes</td>
+                                <td>$620,000</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Devolución</span></td>
+                            </tr>
+                            <tr>
+                                <td>Hp Lapton</td>
+                                <td>$2'500,000</td>
+                                <td>Debe</td>
+                                <td><span class="status inprogress">En progreso</span></td>
+                            </tr>
+                            <tr>
+                                <td>Nevera</td>
+                                <td>$1'200,000</td>
+                                <td>Pago</td>
+                                <td><span class="status delivered">Entregado</span></td>
+                            </tr>
+                            <tr>
+                                <td>Ventana</td>
+                                <td>$230,000</td>
+                                <td>Debe</td>
+                                <td><span class="status pending">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td>Parlantes</td>
+                                <td>$620,200</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Devolución</span></td>
+                            </tr>
+                            <tr>
+                                <td>Hp Lapton</td>
+                                <td>$2'500,000</td>
+                                <td>Debe</td>
+                                <td><span class="status inprogress">En progreso</span></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Clientes Recientes</h2>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="mujer1.jpg" alt=""></div></td>
+                                <td><h4>Daniela <br><span>Colombia</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="hombre1.jpg" alt=""></div></td>
+                                <td><h4>David <br><span>Italia</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="mujer2.jpg" alt=""></div></td>
+                                <td><h4>Sara <br><span>Reino Unido</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="hombre2.jpg" alt=""></div></td>
+                                <td><h4>Sergio <br><span>España</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="mujer3.jpg" alt=""></div></td>
+                                <td><h4>Lina <br><span>Argentina</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="hombre3.jpg" alt=""></div></td>
+                                <td><h4>Cedric <br><span>Holanda</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="mujer4.jpg" alt=""></div></td>
+                                <td><h4>Jane <br><span>USA</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBox"><img src="hombre4.jpg" alt=""></div></td>
+                                <td><h4>Justin <br><span>Canada</span></h4></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        const toggleMenu = ()=>{
+            const toggle = document.querySelector('.toggle');
+            const navegacion = document.querySelector('.navigation');
+            const main = document.querySelector('.main')
+            toggle.classList.toggle('active')
+            navegacion.classList.toggle('active')
+            main.classList.toggle('active')
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/95a76028de.js" crossorigin="anonymous"></script>
+</body>
+</html>
